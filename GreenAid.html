@@ -1,49 +1,77 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Mini Gallery (up to 6 images)</title>
-<!-- Link to external CSS file -->
-<link rel="stylesheet" href="css/styling.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Outings Gallery - Green For Us</title>
+  <!-- Link to the separate CSS file for the gallery -->
+  <link rel="stylesheet" href="css/styling.css" />
 </head>
 <body>
-    <nav>
-        <ul>    
-   <li><a href="index.html" class="active">Home</a></li>
+     <nav>
+    <ul>
+   <li><a href="Home.html" >Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="Donate.html">Donate</a></li>
       <li><a href="contact.html">Contact</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="enquiry.html">Enquiry</a></li>
-        <li><a href="GreenAid.html">GreenAid</a></li>
+        <li><a href="GreenAid.html" class="active">GreenAid</a></li>
     </ul>
         </nav>
+  <main class="page">
+    <header class="page-header">
+      <h1>Outings & Events</h1>
+      <p>Photos from recent tree-planting, community clean-ups and educational events.</p>
+    </header>
 
-<h2 style="text-align:center; font-family: Arial, sans-serif;">Mini Gallery — up to 6 images</h2>
+    <!-- Gallery container uses CSS Grid (desktop) and will fall back to Flexbox layout on small screens -->
+    <section class="gallery" aria-label="Gallery of Green For Us outings">
+      <!-- Featured (larger) image: area name used in grid-template-areas -->
+      <figure class="gallery-item gallery-item--featured" tabindex="0">
+        <img src="images\SaplingPrep.jpg" alt="Volunteers planting trees" />
+        <figcaption class="caption">
+          <h3>Community Tree Planting — June 2025</h3>
+          <p>Volunteers from the neighbourhood joined us to plant 200 trees.</p>
+        </figcaption>
+      </figure>
 
+      <!-- Other gallery images -->
+      <figure class="gallery-item gallery-item--a" tabindex="0">
+        <img src="images\CommunityTreePlanting.jpg" alt="Volunteers with saplings" />
+        <figcaption class="caption">
+          <strong>Sapling Prep</strong><span> — Workshop</span>
+        </figcaption>
+      </figure>
 
-<!-- Gallery: replace the src values with your image paths. Keep or remove items to match how many images you want (max 6). -->
-<div class="gallery">
-<div class="gallery-item">
-<img src="https://picsum.photos/id/1015/400/400" alt="Image 1">
-</div>
-<div class="gallery-item">
-<img src="https://picsum.photos/id/1016/400/400" alt="Image 2">
-</div>
-<div class="gallery-item">
-<img src="https://picsum.photos/id/1025/400/400" alt="Image 3">
-</div>
-<div class="gallery-item">
-<img src="https://picsum.photos/id/1035/400/400" alt="Image 4">
-</div>
-<div class="gallery-item">
-<img src="https://picsum.photos/id/1041/400/400" alt="Image 5">
-</div>
-<div class="gallery-item">
-<img src="https://picsum.photos/id/1050/400/400" alt="Image 6">
-</div>
-</div>
+      <figure class="gallery-item gallery-item--b" tabindex="0">
+        <img src="images\BeachCleanUp.jpg" alt="Cleanup team on the beach" />
+        <figcaption class="caption">
+          <strong>Beach Clean-Up</strong><span> — August 2025</span>
+        </figcaption>
+      </figure>
 
+      <figure class="gallery-item gallery-item--c" tabindex="0">
+        <img src="images\CompostingLesson.jpg" alt="Children learning about composting" />
+        <figcaption class="caption">
+          <strong>Composting Lesson</strong><span> — School Visit</span>
+        </figcaption>
+      </figure>
 
+      <figure class="gallery-item gallery-item--d" tabindex="0">
+        <img src="images\PlantingSuccess.jpg" alt="Group photo after planting" />
+        <figcaption class="caption">
+          <strong>Planting Success</strong><span> — Group Photo</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item gallery-item--e" tabindex="0">
+        <img src="images\sponsorDay.jpg" alt="Sponsor handing tools to volunteers" />
+        <figcaption class="caption">
+          <strong>Sponsorship Day</strong><span> — Tools Donation</span>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
 </body>
 </html>

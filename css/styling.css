@@ -232,17 +232,16 @@ filter: saturate(1.05);
   max-width: 480px;
 }
 
-.container h1 {
+.container {
   text-align: center;
   margin-bottom: 10px;
   color: #2e7d32;
-}
-
-.container p {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 0.95rem;
-  color: #555;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: none;   /* allow full width */
 }
 
 form label {
@@ -363,4 +362,92 @@ header {
     grid-template-columns: 1fr; /* Stack image above text */
     text-align: center;
   }
+}
+
+/* ---------- Gallery container ---------- */
+.gallery {
+  display: grid;
+  gap: 14px;
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: auto;
+  grid-template-areas:
+    "featured featured a"
+    "featured featured b"
+    "c d e";
+}
+.gallery-item--featured { grid-area: featured; }
+.gallery-item--a { grid-area: a; }
+.gallery-item--b { grid-area: b; }
+.gallery-item--c { grid-area: c; }
+.gallery-item--d { grid-area: d; }
+.gallery-item--e { grid-area: e; }
+
+/* ---------- Gallery items ---------- */
+.gallery-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/10;
+}
+.caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+}
+.gallery-item--featured img { aspect-ratio: 32/18; }
+.gallery-item--featured .caption { padding: 18px; }
+
+/* ---------- Typography inside captions ---------- */
+.caption h3, .caption strong {
+  font-size: 1rem;
+  color: #163f16;
+}
+.caption p, .caption span {
+  font-size: 0.9rem;
+  color: #425043;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 760px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+    padding: 0 8px;
+  }
+  .gallery-item img { aspect-ratio: 16/9; }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "featured a"
+      "featured b"
+      "c d"
+      "e e";
+  }
+}
+
+/* ---------- Accessibility ---------- */
+.gallery-item:focus {
+  outline: 3px solid rgba(46,125,50,0.18);
+  outline-offset: 4px;
 }
