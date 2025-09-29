@@ -15,4 +15,8 @@ creates a platform that builds trust with donors and community members.
 
 Key Features and Functionality:
 Donate Page: the donate page offers multiple ways of payment which is to cater to visitors often times one form of payment is limiting. 
-Green Aid: This will be the gallery page showing our adventures in other communities. This page is made to show our visitors our work and ethics. it will be made using a grid layout 
+Green Aid: This will be the gallery page showing our adventures in other communities. This page is made to show our visitors our work and ethics. it will be made using a grid layout with css. 
+Naviagtion: 
+
+
+
