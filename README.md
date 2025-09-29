@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jq3WPKhs)
+I7[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jq3WPKhs)
 WEDE5020 Part 2- Green for Us
 
 Name: Mihlali Leonard Sikakane 
@@ -18,7 +18,7 @@ Donate Page- the donate page offers multiple ways of payment which is to cater t
 Green Aid- This will be the gallery page showing our adventures in other communities. This page is made to show our visitors our work and ethics. it will be made using a grid layout with css. 
 Naviagtion and layout- The navigation bar has been made to fit screen sizes same as with the program. wether the user has a desktop or a phone the website will chnage to fit accordingly with media queries. 
 
-Part 2 Details: The website has been created with content on every page. 
+Part 2 Details: The website has been created with content on every page. Layout and design created with the requirements in mind.
 
 ![image alt](https://github.com/VCWVL/wede5020-part-2-micro-chromosone/blob/21a6fd8b296da4f1067cf6e410816fd95101f3df/Screenshot%202025-09-29%20121709.jpg)
 
